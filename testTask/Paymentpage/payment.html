@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page Developed by Riday</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body>
+    <!-- header  -->
+    <header
+        class="w-full flex justify-between gap-5 h-[90px] px-3 md:px-[40px]  items-center border-b-[1px] border-[#E6E6E6]">
+        <!-- logo  -->
+        <div class="logo-container ">
+            <img src="./paymentAssets/tourbuddy.png" class="md:w-48 w-36 cursor-pointer  " alt="">
+        </div>
+        <!-- nav items  -->
+        <nav class="navigation-items gap-5 flex lg:gap-16 items-center  ">
+            <ul class="hidden md:flex gap-4 lg:gap-6 text-[#495560] font-[600] text-sm lg:text-[15px]">
+                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">About Us</li>
+                <li class="cursor-pointer">Our Most Rated Guides</li>
+                <li class="cursor-pointer">Our Packages</li>
+                <li class="cursor-pointer">Most Desired Places</li>
+            </ul>
+            <!-- cta  -->
+            <button
+                class="cta lg:w-[140px] bg-[#FFDA32] py-[14px] px-[35px] flex  items-center justify-center cursor-pointer  font-[800] text-[16px] text-nowrap rounded-sm  ">
+                Sign In
+                </div>
+        </nav>
+    </header>
+
+    <!-- main  -->
+    <main class="main flex flex-col ">
+        <!-- title  -->
+        <div class="payment-title font-[700] text-[32px] px-10 md:px-[100px] relative py-5 top-5 ">Payment</div>
+
+        <div class="main-container  bg-[#F9FAFD] px-6 md:px-[92px]">
+
+            <!-- payment details -->
+            <div class="payment-details flex justify-between w-full gap-20 pt-16 ">
+                <!-- left - detials input field  -->
+
+                <div class="details-container flex flex-col gap-10 w-full md:w-2/3 ">
+                    <h1 class="choose-payment-method text-[36px] font-[400] text-black ">
+                        Choose Payment Method
+                    </h1>
+                    <div class="input-details flex flex-col gap-10">
+                        <div class="name-container flex flex-col gap-1">
+                            <label for="name">Name:</label>
+                            <input class="bg-[#F4F4F5] md:p-[18px] p-[12px] rounded-[3px]" type="text" id="name"
+                                name="name" placeholder="Ahnaf Amer">
+                        </div>
+
+                        <div class="transaction-container flex flex-col gap-1">
+                            <label for="transaction-id">Transaction ID:</label>
+                            <input class="bg-[#F4F4F5] md:p-[18px] p-[12px] rounded-[3px]" type="text"
+                                id="transaction-id" name="transactionId" placeholder="............">
+                        </div>
+
+                        <div class="phone-container flex flex-col gap-1">
+                            <label for="phone">Phone:</label>
+                            <input class="bg-[#F4F4F5] md:p-[18px] p-[12px] rounded-[3px]" type="text" id="phone"
+                                name="phone" placeholder="+8801321454687">
+                        </div>
+
+                        <div class="pin-container flex flex-col gap-1">
+                            <label for="pin">PIN:</label>
+                            <input class="bg-[#F4F4F5] md:p-[18px] p-[12px] rounded-[3px]" type="password" id="pin"
+                                name="pin" placeholder="Enter your PIN">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- right picture payment method  -->
+                <div class="img w-1/3 hidden md:flex justify-center items-start">
+                    <img src="./paymentAssets/payment 1.png" alt="Payment Methods">
+                </div>
+
+            </div>
+            <!-- select method -->
+            <div class="select-method-radio pl-5 mt-10">
+
+                <label class="text-[15px] font-[700]">Select Method:</label>
+                <div class="radio-container flex gap-8 pl-5 mt-5 flex-wrap justify-start items-center">
+
+                    <div
+                        class="bg-[#37B1E2] h-[35px] rounded-full w-[100px] flex justify-center items-center gap-2 text-white">
+                        <input type="radio" id="bkash" name="paymentMethod" value="bkash">
+                        <label for="bkash">Bkash</label>
+                    </div>
+                    <div
+                        class="bg-[#37B1E2] h-[35px] rounded-full w-auto px-5 py-2 flex justify-center items-center gap-2 text-white ">
+                        <input type="radio" id="nagad" name="paymentMethod" value="nagad">
+                        <label for="nagad">Nagad</label>
+                    </div>
+                    <div
+                        class="bg-[#37B1E2] h-[35px] rounded-full w-auto px-5 py-2 flex justify-center items-center gap-2 text-white ">
+                        <input type="radio" id="upay" name="paymentMethod" value="upay">
+                        <label for="upay">UPAY</label>
+                    </div>
+                    <div
+                        class="bg-[#37B1E2] h-[35px] rounded-full w-auto px-5 py-2 flex justify-center items-center gap-2 text-white ">
+                        <input type="radio" id="visa" name="paymentMethod" value="visa">
+                        <label for="visa">VISA</label>
+                    </div>
+                    <div
+                        class="bg-[#37B1E2] h-[35px] rounded-full w-auto px-5 py-2 flex justify-center items-center gap-2 text-white ">
+                        <input type="radio" id="mastercard" name="paymentMethod" value="mastercard">
+                        <label for="mastercard">MasterCard</label>
+                    </div>
+                    <div
+                        class="bg-[#37B1E2] h-[35px] rounded-full w-auto px-5 py-2 flex justify-center items-center gap-2 text-white ">
+                        <input type="radio" id="others" name="paymentMethod" value="others">
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- confirm payment  -->
+            <div class="confirm-container h-20 flex justify-center items-center top-5 relative  ">
+                <button
+                    class=" cursor-pointer bg-[#13253F] max-w-[240px] max-h-[59px] rounded-full px-11 py-3 text-white font-[700] text-[15px]">Confirm
+                    Payment</button>
+            </div>
+            <!-- partners  -->
+            <div class="partner-container w-full p-0 pt-10 md:p-10 flex items-center justify-center">
+                <img src="./paymentAssets/ssl2 1.png" alt="payment assets" class="w-full">
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- footer  -->
+    <footer class=" bg-[#13253F] text-white/60 mt-10 w-full py-5 px-10">
+        <!-- footer content  -->
+        <div class="footer-container w-full flex flex-col gap-16  ">
+            <div
+                class="footer-content flex md:items-start md:justify-around w-full md:flex-row flex-wrap   gap-12 md:gap-5">
+                <!-- left -->
+                <div class="footer-tour-buddy flex flex-col gap-8 mt-5 ">
+                    <div class="footer-logo">
+                        <img src="./paymentAssets/tourbuddy.png" alt="">
+                    </div>
+                    <div class="select-options flex flex-col gap-6 pl-5">
+                        <!-- Language Selection with UK Flag -->
+                        <div class="relative w-64">
+                            <div class="border-white/20 border-[1px] p-3 flex items-center rounded-md max-w-[210px]">
+                                <!-- Flag Image -->
+                                <img src="./paymentAssets/ukflag.png" alt="English (UK)" class="w-5 h-5">
+                                <select name="language" class="bg-[#13253F] focus:outline-none w-full">
+                                    <option value="English (UK)">English (UK)</option>
+                                    <option value="English (US)">English (US)</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <!-- Currency select -->
+                        <div class="relative w-64">
+                            <div class="border-white/20 border-[1px] p-3 flex items-center rounded-md max-w-[210px]">
+                                <select name="currency" class="bg-[#13253F] focus:outline-none w-full ">
+                                    <option value="USD">U.S. Dollar ($)</option>
+                                    <option value="EUR">Euro (€)</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- payment  -->
+                <div class="footer-payment flex flex-col gap-5">
+                    <h2 class="Payment text-[15px] font-[700] text-white/80">Payment</h2>
+                    <ul class="font-[400] flex flex-col gap-3">
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Press Room</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="footer-help flex flex-col gap-5">
+                    <div class="help text-[15px] font-[700] text-white/80">Help</div>
+                    <ul class=" font-[400] flex flex-col gap-3">
+                        <li>Contact us</li>
+                        <li>FAQs</li>
+                        <li>Terms and conditions</li>
+                        <li>Privacy policy</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+                <!-- payment method possible  -->
+                <div class="payment-methods-possible flex flex-col gap-10">
+                    <div class="payment-methods text-[15px] font-[700] text-white/80">Payment methods possible</div>
+                    <div class="payment-container flex flex-col gap-5">
+                        <div class="payment-img flex flex-col gap-3">
+                            <img src="./paymentAssets/partners/Group 408.png" alt="">
+                            <img src="./paymentAssets/partners/Group 409.png" alt="">
+                        </div>
+                        <div class="guide text-center">
+                            Become a Tour guide for Us
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- copy write  -->
+            <div
+                class="copywrite-container w-full flex justify-around flex-col-reverse gap-6 md:flex-row items-center ">
+                <div class="copywrite text-center">Copyright 2025 Tour Buddy. All Rights Reserved</div>
+                <div class="social-media-container">
+                    <div class="socail flex gap-8 justify-center items-center">
+                        <div class="facebook-icon">
+                            <img src="./paymentAssets/socialMedia/facebook.png" alt="facebook" class="cursor-pointer">
+                        </div>
+                        <div class="x-icon">
+
+                            <img src="./paymentAssets/socialMedia/x.png" alt="x" class="cursor-pointer">
+                        </div>
+                        <div class="instagram">
+                            <img src="./paymentAssets/socialMedia/instagram.png" alt="instagram" class="cursor-pointer">
+                        </div>
+                        <div class="pinterest-icon">
+                            <img src="./paymentAssets/socialMedia/pinterest.png" alt="pinterest" class="cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
