@@ -1,0 +1,21 @@
+
+
+main{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sites button{
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
