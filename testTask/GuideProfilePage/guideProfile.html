@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Profile Page Develop by Riday</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header
+        class="w-full flex justify-between gap-5 h-[90px] px-3 md:px-[40px]  items-center border-b-[1px] border-[#E6E6E6]">
+        <!-- logo  -->
+        <div class="logo-container ">
+            <img src="./guideProfileAssets/tourbuddy.png" class="md:w-48 w-36 cursor-pointer  " alt="">
+        </div>
+        <!-- nav items  -->
+        <nav class="navigation-items gap-5 flex lg:gap-16 items-center  ">
+            <ul class="hidden md:flex gap-4 lg:gap-6 text-[#495560] font-[600] text-sm lg:text-[15px]">
+                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">About Us</li>
+                <li class="cursor-pointer">Our Most Rated Guides</li>
+                <li class="cursor-pointer">Our Packages</li>
+                <li class="cursor-pointer">Most Desired Places</li>
+            </ul>
+            <!-- cta  -->
+            <button
+                class="cta lg:w-[140px] transition-all ease-in-out duration-100 hover:bg-[#f7d641] bg-[#FFDA32] py-[14px] px-[35px] flex  items-center justify-center cursor-pointer  font-[800] text-[16px] text-nowrap rounded-sm  ">
+                Sign In
+                </div>
+        </nav>
+    </header>
+    <!-- header end  -->
+
+
+
+
+    <!-- main start  -->
+    <main class="main">
+        <div class=" flex flex-col gap-10 px-3  md:px-16">
+            <!-- guide profile details  -->
+            <div class="guide-profile-details mt-20 gap-8 flex flex-col ">
+                <div class="selected-guide-title text-[20px] font-[400]">Your Selected Guide:</div>
+                <!-- proifle  -->
+                <div class="profile gap-3 flex  items-center justify-between flex-col md:flex-row ">
+                    <div
+                        class="details md:w-3/5 flex items-center gap-5 justify-between shadow-lg border-[#7BBCB0] px-5 py-4 rounded-sm lg:flex-row flex-col">
+                        <div class="profil-pic">
+                            <img src="./guideProfileAssets/profilePic.png" alt="Profile picture">
+                        </div>
+                        <div class="info flex flex-col gap-2 order-last lg:order-none">
+                            <div class="location-ratings flex gap-5 justify-start items-center">
+                                <div
+                                    class="location font-[800] text-[11px] uppercase bg-[#7BBCB0] py-[6px] px-[20px] rounded-full text-white w-[140px]  justify-center items-center text-center  ">
+                                    kuakata</div>
+                                <span class=" vr-line bg-[#C7CDD0] h-[14px]  w-[1px]"></span>
+                                <div class="rating flex items-center">
+                                    <img src="./guideProfileAssets/ratings.png" alt="" class="w-[70px]">
+                                    <span class="text-[12px] text-[#778088] text-nowrap">(584 reviews)</span>
+                                </div>
+                            </div>
+                            <!-- name  -->
+                            <div class="name font-[700] text-[20px]  ">Raihan Ahmad</div>
+                            <div class="aditional-details flex flex-col gap-1">
+                                <div class="Language">
+                                    <span class="font-bold">Language:</span> <span class="text-sm">English</span>
+                                </div>
+                                <div class="Phone-number">
+                                    <span class="font-bold">Phone Number:</span> <span class="text-sm">+880
+                                        1621926275</span>
+                                </div>
+                                <div class="Experience">
+                                    <span class="font-bold">Experience:</span> <span class="text-sm">Guided more than 20
+                                        family and individuals</span>
+                                </div>
+                                <div class="location">
+                                    <span class="font-bold ">Location:</span> <span class="text-sm">Khulna,
+                                        Bangladesh</span>
+                                </div>
+                            </div>
+                            <div class="others flex gap-5">
+                                <div class="las-online flex items-center gap-[15px] text-[14px] text-nowrap">
+                                    <img src="./guideProfileAssets/clock.png" alt="time"
+                                        class="w-[19.09px] h-[14px] object-contain">
+                                    <span>2 hours</span>
+                                </div>
+                                <div class="transport flex items-center gap-[15px] text-[14px] text-nowrap">
+                                    <img src="./guideProfileAssets/car.png" alt="transport"
+                                        class="w-[19.09px] h-[14px] object-contain">
+                                    <span>Transport</span>
+                                </div>
+                                <div class="family-plan flex items-center gap-[15px] text-[14px] text-nowrap">
+                                    <img src="./guideProfileAssets/human.png" alt="family pan"
+                                        class="w-[19.09px] h-[14px] object-contain">
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- const  -->
+                        <div class="cost flex flex-col justify-center items-end ">
+                            <div class="price text-nowrap font-[700] text-[20px] text-[#7BBCB0] ">TK 250.00</div>
+                            <span class="text-[12px] font-[600] ">per person</span>
+                        </div>
+
+
+                    </div>
+                    <!-- hire me cta  -->
+                    <div class="cta w2/5 flex justify-center items-center mt-5 md:mt-0">
+                        <button class=" hover:bg-[#193154] bg-[#13253F] cursor-pointer rounded-full md:w-[261px]md: md:h-[96px] w-[200px] h-[60px] flex justify-center items-center transition-all ease-in-out duration-100">
+                            <img src="./guideProfileAssets/Hire Me.png" alt="hire me">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- guide rating start  -->
+            <div class="guide-ratings md:gap-3 flex w-full justify-between items-center flex-col md:flex-row gap-10 mt-5 ">
+                <div class="ratings flex flex-col  gap-2">
+                    <div class=" flex gap-5 items-center">
+                        <span class="font-[900] text-[48px] text-[#1C2B38]">4.0</span>
+                        <span class="text-[#778088] text-[23px] font-[300] mt-5">14 Reviews</span>
+                    </div>
+                    <div class="ratings-image w-full">
+                        <img src="./guideProfileAssets/ratings.png" alt="ratings" class="w-[250px] h-[50px]">
+                    </div>
+                </div>
+                <div
+                    class="others bg-[#E6E6E6] h-[100px] font-[400] text-[16px] flex flex-col items-start justify-center rounded-[33px] px-10 gap-2 py-5 ">
+                    <div class="proficiency">Proficiency in: English, Bangla, and French.</div>
+                    <div class="guided">
+                        Guided: Nearly 20 individuals.
+                    </div>
+                </div>
+            </div>
+
+            <!-- guide rating end  -->
+
+            <!-- guide review  start-->
+            <div class="guide-review w-full items-center justify-center mt-10 px-3  ">
+                <!-- revie title start  -->
+                <div class="review-title w-full items-center justify-between flex flex-col md:flex-row gap-5 px-5 md:px-0">
+                    <h2 class="text-[22px] font-[700] text-[#1C2B38]">Customer Review</h2>
+
+                    <div class="rating-critaria text-[#495560] font-[700] text-[14px] gap-10 w-full md:w-[400px]">
+                        <div class="guide flex gap-5 flex-nowrap w-full justify-between items-center">
+                            <div class="w-4/12">Guide</div>
+                            <div class="w-7/12 bg-gray-200 h-[5px] rounded-full relative">
+                                <div class="bg-[#FFDA32] h-[5px] rounded-full absolute left-0" style="width: 96%;">
+                                </div>
+                            </div> <span>4.8</span>
+                        </div>
+                        <div class="Transportation flex gap-5 flex-nowrap w-full justify-between items-center">
+                            <div class="w-4/12">Transportation</div>
+                            <div class="w-7/12 bg-gray-200 h-[5px] rounded-full relative">
+                                <div class="bg-[#FFDA32] h-[5px] rounded-full absolute left-0" style="width: 60%;">
+                                </div>
+                            </div> <span>3.0</span>
+                        </div>
+                        <div class="Value-for-money flex gap-5 flex-nowrap w-full justify-between items-center">
+                            <div class="w-4/12">Value for money</div>
+                            <div class="w-7/12 bg-gray-200 h-[5px] rounded-full relative">
+                                <div class="bg-[#FFDA32] h-[5px] rounded-full absolute left-0" style="width: 90%;">
+                                </div>
+                            </div> <span>4.5</span>
+                        </div>
+                        <div class="Safety flex gap-5 flex-nowrap w-full justify-between items-center">
+                            <div class="w-4/12">Value for money</div>
+                            <div class="w-7/12 bg-gray-200 h-[5px] rounded-full relative">
+                                <div class="bg-[#FFDA32] h-[5px] rounded-full absolute left-0" style="width: 80%;">
+                                </div>
+                            </div> <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- review title end  -->
+
+
+                <!--detail review start -->
+                <div class="details-review flex flex-col w-full mt-12 px-5 gap-12 lg:gap-5">
+
+                <div class="review-1 justify-start lg:justify-between flex w-full gap-4 items-center flex-wrap lg:flex-nowrap">
+
+                    <div class="profile-pic lg:w-[140px] ">
+                        <img src="./guideProfileAssets/review_imgae-1.png" alt="" class="w-[60px] h-[68.97px] bg-contain">
+                    </div>
+
+                    <div class="user-details  flex flex-col justify-start">
+                        <div class="ratings"><img src="./guideProfileAssets/ratings.png" alt="" class="w-[70px] h-[16.09px]"></div>
+                        <div class="name flex items-center gap-2 flex-nowrap text-nowrap font-[700] text-[15px] text-[#1C2B38]">Arlene McCoy <span><img src="./guideProfileAssets/bi_check-all.png"
+                                    alt=""></span></div>
+                        <div class="date font-[600] text-[13px] text-[#778088]">2 October 2012</div>
+                    </div>
+
+                    <div class="review-details ">
+                        <div class="review-title flex justify-between">
+                            <h1 class="font-[700] text-[15px] text-[#1C2B38]">Good Tour, Really Well Organised</h1> <span class="text-[13px] font-[600] flex gap-3">Helpful? <span class="text-[#7BBCB0] font-[700] text-[13px]">Yes</span></span>
+                        </div>
+                        <div class="expression font-[400] text-[14px]">"Amazing Guide!"</div>
+                        <div class="expanded font-[400] text-[14px]">
+                            Our tour guide in Kuakata was fantastic! They showed us the best spots for sunrise and
+                            sunset, shared fascinating local stories, and made the trip smooth and enjoyable. Their
+                            friendly attitude and attention to detail truly made our visit unforgettable. Highly
+                            recommend!
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="review-2justify-start lg:justify-between flex w-full gap-4 items-center flex-wrap lg:flex-nowrap">
+
+                    <div class="profile-pic lg:w-[140px]">
+                        <img src="./guideProfileAssets/review_image-2.png" alt="" class="w-[60px] h-[68.97px] bg-contain">
+                    </div>
+
+                    <div class="user-details  flex flex-col justify-start">
+                        <div class="ratings"><img src="./guideProfileAssets/ratings.png" alt="" class="w-[70px] h-[16.09px]"></div>
+                        <div class="name  flex items-center gap-2 flex-nowrap text-nowrap font-[700] text-[15px] text-[#1C2B38]">Jenny Wilson <span><img src="./guideProfileAssets/bi_check-all.png"
+                                    alt=""></span></div>
+                        <div class="date font-[600] text-[13px] text-[#778088]">2 October 2012</div>
+                    </div>
+
+                    <div class="review-details">
+                        <div class="review-title flex justify-between">
+                            <h1 class="font-[700] text-[15px] text-[#1C2B38]">Informative but disappointed not seeing changing of the guards</h1> <span class="text-[13px] font-[600] flex gap-3">Helpful?
+                                <span class="text-[#7BBCB0] font-[700] text-[13px]">Yes</span></span>
+                        </div>
+                        <div class="expression font-[400] text-[14px]">"Fantastic Experience!"</div>
+                        <div class="expanded font-[400] text-[14px]">Our visit to Kuakata was unforgettable, thanks to our amazing guide. They
+                            were knowledgeable, friendly, and went above and beyond to ensure we enjoyed every moment.
+                            From exploring the beach to learning about local culture, everything was perfect. Highly
+                            recommended!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <!-- guide review end  -->
+
+
+            <div class="viewmorecomments-containre w-full justify-center items-center flex ">
+                <div class="reviewcomments text-[#7BBCB0] text-[14px] font-[700] underline cursor-pointer">
+                    View More Comments
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main end  -->
+
+
+
+
+    <!-- footer start  -->
+    <footer class=" bg-[#13253F] text-white/60 mt-52 w-full  ">
+        <!-- footer content  -->
+        <div class="footer-container w-full flex flex-col gap-16 pt-8   ">
+            <div
+                class="footer-content flex  justify-center md:justify-between w-full md:flex-row flex-wrap items-center   gap-12 md:gap-5">
+                <!-- left -->
+                <div class="footer-tour-buddy flex flex-col gap-8 mt-5 w-full items-center md:w-1/3 ">
+                    <div class="footer-logo">
+                        <img src="./guideProfileAssets/tourbuddy.png" alt="">
+                    </div>
+                    <div class="select-options flex flex-col gap-6 ml-32">
+                        <!-- Language Selection with UK Flag -->
+                        <div class="relative w-64">
+                            <div class="border-white/20 border-[1px] p-3 flex items-center rounded-md max-w-[210px]">
+                                <!-- Flag Image -->
+                                <img src="./guideProfileAssets/ukflag.png" alt="English (UK)" class="w-5 h-5">
+                                <select name="language" class="bg-[#13253F] focus:outline-none w-full">
+                                    <option value="English (UK)">English (UK)</option>
+                                    <option value="English (US)">English (US)</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <!-- Currency select -->
+                        <div class="relative w-64">
+                            <div class="border-white/20 border-[1px] p-3 flex items-center rounded-md max-w-[210px]">
+                                <select name="currency" class="bg-[#13253F] focus:outline-none w-full ">
+                                    <option value="USD">U.S. Dollar ($)</option>
+                                    <option value="EUR">Euro (€)</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- payment method possible  -->
+                <div class="payment-methods-partner flex flex-col gap-10 w-[80%] md:w-1/3 justify-center items-center">
+                    <div class="payment-container flex flex-col gap-5">
+                        <div class="payment-img flex flex-col gap-3 w-[219.33px]">
+                            <img src="./guideProfileAssets/partners/Group 408.png" alt="" class=" w-full">
+                            <img src="./guideProfileAssets/partners/Group 409.png" alt="" class=" w-full">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- copy write  -->
+            <div
+                class="copywrite-container w-full flex justify-end flex-col-reverse gap-6 md:flex-row items-center bg-black/20 py-2 px-10 ">
+                <div class="social-media-container">
+                    <div class="socail flex gap-8 justify-center items-center">
+                        <div class="facebook-icon">
+                            <div class=" w-[40px] h-[40px] bg-[#4B69B1] rounded-full "></div>
+                        </div>
+                        <div class="x-icon">
+
+                            <div class=" w-[40px] h-[40px] bg-[#37B1E2] rounded-full "></div>
+                        </div>
+                        <div class="instagram">
+                            <div class=" w-[40px] h-[40px] bg-[#C23772] rounded-full "></div>
+                        </div>
+                        <div class="pinterest-icon">
+                            <div class=" w-[40px] h-[40px] bg-[#E83F3A] rounded-full "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- footer end  -->
+
+</body>
+
+</html>
